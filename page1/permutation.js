@@ -42,3 +42,15 @@ btn.addEventListener('click', () => {
   console.log(finalAns);
   display.innerText = finalAns;
 });
+
+window.onkeydown = (event) => {
+  if (event.key === '9') {
+    let ans1 = factorial(n.value);
+
+    let ans2 = factorial2(x);
+
+    let finalAns = ans1 / ans2;
+    console.log(finalAns);
+    display.innerText = finalAns;
+  }
+};
