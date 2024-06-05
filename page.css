@@ -56,11 +56,6 @@ input::placeholder {
   box-shadow: 2px 2px 2px black;
 }
 
-/* #btn:hover {
-  background: green;
-  color: white;
-} */
-
 #btn:active {
   background: red;
   color: white;
@@ -76,7 +71,7 @@ input::placeholder {
 }
 
 #backBtn a {
-  transition: 0.3s;
+  transition: 0.1s;
 }
 
 #backBtn:active a {
