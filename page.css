@@ -57,9 +57,9 @@ input::placeholder {
 }
 
 #btn:active {
-  background: red;
-  color: white;
-  box-shadow: 0px 0px 0px;
+  background: red !important;
+  color: white !important;
+  box-shadow: 0px 0px 0px !important;
 }
 
 #backBtn {

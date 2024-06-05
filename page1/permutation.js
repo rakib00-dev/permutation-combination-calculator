@@ -33,7 +33,7 @@ function factorial2(xy) {
   console.log(xy);
 }
 
-btn.addEventListener('click', () => {
+function main() {
   let ans1 = factorial(n.value);
 
   let ans2 = factorial2(x);
@@ -41,16 +41,28 @@ btn.addEventListener('click', () => {
   let finalAns = ans1 / ans2;
   console.log(finalAns);
   display.innerText = finalAns;
+}
+
+btn.addEventListener('click', () => {
+  main();
 });
 
 window.onkeydown = (event) => {
-  if (event.key === '9') {
-    let ans1 = factorial(n.value);
-
-    let ans2 = factorial2(x);
-
-    let finalAns = ans1 / ans2;
-    console.log(finalAns);
-    display.innerText = finalAns;
+  if (event.key === 'Enter') {
+    main();
+    if (true) {
+      btn.style.background = 'red';
+      btn.style.color = 'white';
+      btn.style.boxShadow = '0px 0px 0px';
+    }
   }
+};
+
+window.onkeyup = (event) => {
+  if (event.key === 'Enter') {
+    btn.style.color = 'black';
+    btn.style.background = 'white';
+    btn.style.boxShadow = '2px 2px 2px black';
+  }
+  // return;
 };
